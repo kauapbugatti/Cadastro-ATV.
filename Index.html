@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+        <style>
+            body {
+                background-color: greenyellow;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+    
+            header {
+                background-color: rgb(63, 63, 63);
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+                position: relative;
+            }
+    
+            header img {
+                max-width: 100px;
+            }
+    
+            .header-right {
+                display: flex;
+                gap: 10px;
+            }
+    
+            .header-right a,
+            .header-right button {
+                color: white;
+                text-decoration: none;
+                background-color: #444;
+                padding: 10px 15px;
+                border-radius: 5px;
+                font-size: 0.9em;
+                border: none;
+                cursor: pointer;
+            }
+    
+            .header-right a:hover,
+            .header-right button:hover {
+                background-color: #666;
+            }
+    
+            .login-form {
+                display: none;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                background-color: #fff;
+                color: #000;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                width: 300px;
+                text-align: left;
+            }
+    
+            .login-form input {
+                width: calc(100% - 22px);
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+    
+            .login-form button {
+                width: 100%;
+                padding: 10px;
+                background-color: #444;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+            }
+    
+            .login-form button:hover {
+                background-color: #666;
+            }
+    
+            .gallery-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+                padding: 20px;
+            }
+    
+            .gallery-item {
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 10px;
+                background-color: #fff;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: all .3s;
+            }
+    
+            .gallery-item img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+    
+            .top-text {
+                margin: 10px 0;
+                font-size: 150px;
+                color: beige;
+            }
+    
+            .text {
+                margin: 10px 0;
+                font-size: 0.9em;
+            }
+    
+            footer {
+                background-color: #f1f1f1;
+                padding: 10px;
+            }
+    
+            .footer-content {
+                text-align: center;
+            }
+    
+            .contact-info p {
+                margin: 5px 0;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+        <header>
+            <img src="favicon.ico" alt="Topo">
+            <h1 class="top-text">Ben 10</h1>
+            <div class="header-right">
+                <button id="loginButton">Login</button>
+                <a href="Index2.html">Cadastro</a>
+            </div>
+            
+            <div class="login-form" id="loginForm">
+                <h3>Login</h3>
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <a href="Index2.html"><button type="submit">Entrar</button></a>
+            </div>
+        </header>
+    
+        <main class="gallery-grid">
+            <div class="gallery-item">
+                <img src="Image1.jpg" alt="Imagem 1">
+                <p class="text">Ben 10 é uma franquia de mídia de desenhos animados norte-americana e é produzida pelo Cartoon Network Studios. <br>
+                    A franquia fala sobre um garoto que usa um dispositivo extraterrestre em formato de relógio de pulso, que a cada série é renovado ou trocado. É o chamado Omnitrix, que permite a ele se transformar em diversas criaturas exóticas. <br>
+                    A franquia Ben 10 já arrecadou mais de 2 bilhões de dólares em vendas de varejo na Europa, Oriente Médio e África (EMEA) e já vendeu 1 milhão de brinquedos em todo o mundo.</p>
+            </div>
+    
+            <div class="gallery-item">
+                <img src="Image2.jpg" alt="Imagem 2">
+                <p class="text">Diamante é um alienígena do desenho animado Ben 10 que possui as seguintes características:
+                    <br>É originário do planeta Petropia
+                    <br>É conhecido por ser forte, resistente e por ter a habilidade de criar objetos de cristal
+                    <br>Entra em ação quando Ben precisa de proteção e poder de fogo
+                </p>
+            </div>
+    
+            <div class="gallery-item">
+                <img src="Image3.jpg" alt="Imagem 3">
+                <p class="text">Espécie:
+                    <br>É um Pyronite, uma forma de vida de magma que vem do planeta Pyrus.
+                    <br>Habilidades:
+                    <br>Chama tem a capacidade de controlar e criar fogo, podendo projetá-lo em diversas formas,
+                    <br>absorvê-lo, disparar fluxos de fogo, criar bolas de fogo, e irradiar calor para todas as direções.
+                </p>
+            </div>
+    
+            <div class="gallery-item">
+                <img src="Image4.jpg" alt="Imagem 4">
+                <p class="text">Insectóide é um inseto com quatro longas pernas, e dois braços com mãos pretas,
+                    <br>dando uma impressão de que está usando luvas, e três dedos em cada um delas.
+                    <br>Sua cabeça é completamente preta, e nela estão ligados quatro olhos pequenos e laranjas.
+                    <br>Em suas costas, tem uma grande e frágil asa verde transparente.
+                </p>
+            </div>
+    
+            <div class="gallery-item">
+                <img src="Image5.jpg" alt="Imagem 5">
+                <p class="text">
+                    Quatro Braços é um personagem do desenho animado Ben 10, que tem as seguintes características:
+                    <br><ul>
+                        <li>É um Tetramand, uma raça alienígena com quatro braços e força sobre-humana</li>
+                        <li>Tem pele vermelha e espessa, como se estivesse blindado</li>
+                        <li>Possui quatro olhos</li>
+                        <li>É forte o suficiente para segurar um carro em cada uma de suas mãos inferiores</li>
+                        <li>Ben escolhia Quatro Braços para situações que exigiam muita força física e saltos a longas distâncias</li>
+                    </ul>
+                </p>
+            </div>
+    
+            <div class="gallery-item">
+                <img src="Image6.jpg" alt="Imagem 6">
+                <p class="text">
+                    Massa Cinzenta é um alienígena do desenho animado Ben 10 com as seguintes características:
+                    <br><ul>
+                        <li>É um Galvan, uma espécie pequena e muito inteligente</li>
+                        <li>Tem pele cinza, morfologia semelhante a um sapo e 13 centímetros de altura</li>
+                        <li>Possui grandes olhos verdes com pálpebras horizontais</li>
+                        <li>Tem uma inteligência muito superior à de quase qualquer alienígena</li>
+                        <li>Conhece qualquer matéria em nível avançado</li>
+                        <li>Pode construir máquinas se estiver perto de alguns equipamentos</li>
+                        <li>Fala com grafia avançada</li>
+                    </ul>
+                </p>
+            </div>
+    
+        </main>
+    
+        <footer>
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p>&copy; Site do Kauã Pereira Bugatti 1DS1</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <p>Email: kauapbugatti@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+    
+        <script>
+            document.getElementById('loginButton').addEventListener('click', function() {
+                var form = document.getElementById('loginForm');
+                form.style.display = form.style.display === 'block' ? 'none' : 'block';
+            });
+        </script>
+    
+    </body>
+    
+    </html>
